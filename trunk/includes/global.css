@@ -1,0 +1,124 @@
+/* CSS Document */
+
+body {
+	background-color: #000000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.sosumi {
+	font-size: 10px !important;
+	color: #76797c;
+}
+.topbannerlinks {
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.topbannerlinks a {
+	color: #FFFFFF;
+}
+.adminbar {
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #CCCCCC;
+	padding: 3px;
+}
+.statslabel {
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #CCCCCC;
+	padding: 3px;
+}
+.statsoutput {
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 3px;
+}
+
+/* Main section CSS */
+.main {
+	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.blurbtitle {
+	font-size:12px;
+	color:#FFF;
+}
+
+.blurbtitle a {
+	text-decoration:none;
+	color:#FFF;
+}
+
+.title {
+	font-size: 18px;
+	color: #FFFFFF;
+	padding-bottom: 15px;
+}
+
+.textboxname {
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.textboxrequired {
+	font-size: 11px;
+	color: #CCCCCC;
+}
+
+.formfield {
+	margin-bottom: 5px;
+}
+
+.disclaimer {
+	font-size: 11px;
+	color: #CCCCCC;
+}
+
+.disclaimer a {
+	font-size: 11px;
+	color: #FFF;
+}
+
+/* Footer CSS */
+.breadcrumb {
+	color:#fff;
+	border:none;
+	text-align:center;
+	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	font-size: 10px;
+	margin-top:25px;
+}
+.breadcrumb a {
+	color: #99CCFF;
+	text-decoration:none;
+}
+
+.footer {
+	color:#fff;
+	text-align:center;
+	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+.footer a {
+	color: #99CCFF;
+}
+
+.footer input {
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+/* These are for displaying the error and information messages on the screen. */
+div.ErrorMessage { font-size: 10px; background: #FFBFC5; color: #601319; border-left: 3px solid #601319; padding: 2px 4px; margin: 2px 0; }
+div.ErrorMessage A { color: black; }

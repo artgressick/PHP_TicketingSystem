@@ -1,0 +1,357 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #8993a3; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+TABLE {
+	FONT: 10px 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT: 10px 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif
+}
+#navbar {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavoff_041804.gif); BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; HEIGHT: 25px; TEXT-ALIGN: center
+}
+#navbar TD A:link {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 8px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#navbar TD A:visited {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 8px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#navbar TD A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+#globalnav {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavoff_041804.gif); BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; HEIGHT: 25px; TEXT-ALIGN: center
+}
+#globalnav TD A {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#globalnav TD A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+#shake #globalnav .hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavonyellow_041804.gif); COLOR: #fff
+}
+#fcp #globalnav .hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavonorange_041804.gif); COLOR: #fff
+}
+#motion #globalnav .hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavongreen_041804.gif); COLOR: #fff
+}
+#logic #globalnav .hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavonblue_041804.gif); COLOR: #fff
+}
+#dsp #globalnav .hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavonpurple_041804.gif); COLOR: #fff
+}
+#localnav {
+	BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; HEIGHT: 25px
+}
+#localnav TD A:link {
+	DISPLAY: block; FONT-WEIGHT: 900; PADDING-BOTTOM: 7px; COLOR: #000; PADDING-TOP: 6px; BACKGROUND-REPEAT: repeat-x; TEXT-DECORATION: none
+}
+#localnav TD A:visited {
+	DISPLAY: block; FONT-WEIGHT: 900; PADDING-BOTTOM: 7px; COLOR: #000; PADDING-TOP: 6px; BACKGROUND-REPEAT: repeat-x; TEXT-DECORATION: none
+}
+#subnav A:link {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 35px; FONT-WEIGHT: bold; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+#subnav A:visited {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 35px; FONT-WEIGHT: bold; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+#subnav A:hover {
+	TEXT-DECORATION: none
+}
+#subnav A:active {
+	TEXT-DECORATION: none
+}
+#subnav LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#subnav UL {
+	BORDER-BOTTOM: #6a7180 1px solid
+}
+#subnav .sidebox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#subnav A#hi {
+	COLOR: #000
+}
+#shake #localnav {
+	BACKGROUND-COLOR: #f1e97e
+}
+#shake #localnav TD A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellow_041804.gif)
+}
+#shake #localnav TD A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellow_041804.gif)
+}
+#shake #localnav TD A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellowhov_042004.gif)
+}
+#shake #localnav TD A:active {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellowhov_042004.gif)
+}
+#shake #localnav TD.hi A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellowon_041804.gif)
+}
+#shake #localnav TD.hi A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavyellowon_041804.gif)
+}
+#dsp #localnav {
+	BACKGROUND-COLOR: #989de2
+}
+#dsp #localnav TD A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurple_041804.gif)
+}
+#dsp #localnav TD A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurple_041804.gif)
+}
+#dsp #localnav TD A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurplehov_042004.gif)
+}
+#dsp #localnav TD A:active {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurplehov_042004.gif)
+}
+#dsp #localnav TD.hi A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurpleon_041804.gif)
+}
+#dsp #localnav TD.hi A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavpurpleon_041804.gif)
+}
+#dsp #subnav A {
+	BACKGROUND-COLOR: #c7ccff
+}
+#dsp #subnav A:hover {
+	BACKGROUND-COLOR: #b4b9ed
+}
+#dsp #subnav A#hi {
+	BACKGROUND-COLOR: #9ca2e7
+}
+#dsp #subnav #subnav1 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconcreate04192004.gif)
+}
+#dsp #subnav #subnav2 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconauth04192004.gif)
+}
+#dsp #subnav #subnav3 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconadv04192004.gif)
+}
+#dsp #subnav #subnav1 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconcreatehov04192004.gif)
+}
+#dsp #subnav #subnav1 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconcreatehi04192004.gif)
+}
+#dsp #subnav #subnav2 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconauthhov04192004.gif)
+}
+#dsp #subnav #subnav2 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconauthhi04192004.gif)
+}
+#dsp #subnav #subnav3 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconadvhov04192004.gif)
+}
+#dsp #subnav #subnav3 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/dvdstudiopro/images/naviconadvhi04192004.gif)
+}
+#motion #localnav {
+	BACKGROUND-COLOR: #a4d3ac
+}
+#motion #localnav TD A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreen_041804.gif)
+}
+#motion #localnav TD A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreen_041804.gif)
+}
+#motion #localnav TD A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreenhov_042004.gif)
+}
+#motion #localnav TD A:active {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreenhov_042004.gif)
+}
+#motion #localnav TD.hi A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreenon_041804.gif)
+}
+#motion #localnav TD.hi A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavgreenon_041804.gif)
+}
+#motion #subnav A {
+	BACKGROUND-COLOR: #d1ebd5
+}
+#motion #subnav A:hover {
+	BACKGROUND-COLOR: #bfe0c5
+}
+#motion #subnav A#hi {
+	BACKGROUND-COLOR: #a7d6ae
+}
+#motion #subnav #subnav1 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconcreative04192004.gif)
+}
+#motion #subnav #subnav2 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconworkflow04192004.gif)
+}
+#motion #subnav #subnav3 A {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconadv04192004.gif)
+}
+#motion #subnav #subnav1 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconcreativehov04192004.gif)
+}
+#motion #subnav #subnav1 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconcreativehi04192004.gif)
+}
+#motion #subnav #subnav2 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconworkflowhi04192004.gif)
+}
+#motion #subnav #subnav2 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconworkflowhi04192004.gif)
+}
+#motion #subnav #subnav3 A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconadvhov04192004.gif)
+}
+#motion #subnav #subnav3 A#hi {
+	BACKGROUND-IMAGE: url(http://images.apple.com/motion/images/naviconadvhi04192004.gif)
+}
+#fcp #localnav {
+	BACKGROUND-COLOR: #dfa16c
+}
+#fcp #localnav TD A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorange_041804.gif)
+}
+#fcp #localnav TD A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorange_041804.gif)
+}
+#fcp #localnav TD A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorangehov_042004.gif)
+}
+#fcp #localnav TD A:active {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorangehov_042004.gif)
+}
+#fcp #localnav TD.hi A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorangeon_041804.gif)
+}
+#fcp #localnav TD.hi A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavorangeon_041804.gif)
+}
+#logic #localnav {
+	BACKGROUND-COLOR: #98b4e2
+}
+#logic #localnav TD A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavblue_041804.gif)
+}
+#logic #localnav TD A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavblue_041804.gif)
+}
+#logic #localnav TD A:hover {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavbluehov_042004.gif)
+}
+#logic #localnav TD A:active {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavbluehov_042004.gif)
+}
+#logic #localnav TD.hi A:link {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavblueon_041804.gif)
+}
+#logic #localnav TD.hi A:visited {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/midnavblueon_041804.gif)
+}
+#header {
+	MARGIN: 1em auto 0px
+}
+#main {
+	MARGIN: 0px auto 1.5em
+}
+A {
+	COLOR: #054ca3
+}
+.nounder A {
+	TEXT-DECORATION: none
+}
+#cont P {
+	FONT-SIZE: 12px
+}
+#cont {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+#cont H2 A {
+	TEXT-DECORATION: none
+}
+#cont H2 {
+	PADDING-BOTTOM: 3px
+}
+#side {
+	BACKGROUND: #dcdee4; BORDER-LEFT: #9aa0ac 1px solid
+}
+#side H2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 1em; BACKGROUND: #c3c8d9; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+#side A {
+	COLOR: #054ca3; TEXT-DECORATION: none
+}
+#side A:hover {
+	COLOR: #054ca3; TEXT-DECORATION: underline
+}
+#side .sidebox {
+	PADDING-RIGHT: 5px; BORDER-TOP: #e9ebf2 1px solid; PADDING-LEFT: 5px; BACKGROUND: #dcdee4; PADDING-BOTTOM: 5px; WIDTH: 187px; PADDING-TOP: 5px; BORDER-BOTTOM: #6a7180 1px solid
+}
+#side .sideboxlast {
+	PADDING-RIGHT: 5px; BORDER-TOP: #e9ebf2 1px solid; PADDING-LEFT: 5px; BACKGROUND: #dcdee4; PADDING-BOTTOM: 5px; WIDTH: 187px; PADDING-TOP: 5px
+}
+#side .sidebox H3 {
+	MARGIN-TOP: 5px; FONT-SIZE: 1em
+}
+#side .sideboxlast H3 {
+	MARGIN-TOP: 5px; FONT-SIZE: 1em
+}
+#side .sidebox UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#side .sideboxlast UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#side .sidebox P {
+	MARGIN: 0px
+}
+#side .sideboxlast P {
+	MARGIN: 0px
+}
+#side .sidebox .morelink {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+#side .sideboxlast .morelink {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+#side UL.arrowpro {
+	PADDING-LEFT: 0px; LIST-STYLE-IMAGE: url(http://images.apple.com/finalcutpro/images/arrowpro2.gif); MARGIN-LEFT: 15px
+}
+#side UL.none {
+	PADDING-LEFT: 0px; LIST-STYLE-TYPE: none
+}
+#side .none LI {
+	PADDING-BOTTOM: 10px
+}
+UL.arrowtext {
+	PADDING-LEFT: 0px; LIST-STYLE-IMAGE: url(http://images.apple.com/main/elements/arrowa1a5a9.gif); MARGIN-LEFT: 15px
+}
+.specs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.specslast {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.specs H3 {
+	PADDING-BOTTOM: 3px
+}
+.specslast H3 {
+	PADDING-BOTTOM: 3px
+}
+.clearer {
+	CLEAR: both; MARGIN: 0px
+}
+.hi {
+	FONT-WEIGHT: bold
+}
+.sideleft {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavleft_041804.gif)
+}
+.sideright {
+	BACKGROUND-IMAGE: url(http://images.apple.com/software/pro/common/pronavright_041804.gif)
+}

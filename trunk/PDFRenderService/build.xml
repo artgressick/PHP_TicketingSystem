@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     23.11.2004 11:00:38                                                        
+
+     PDFRenderService    
+     The PDFRenderService renders an SVG document using
+     Apache Batik and returns a PDF version.
+                   
+     ====================================================================== -->
+
+<project name="PDFRenderService" default="war">
+<!--
+http://localhost:9006/pdfrenderservice/get-pdf/UKProEvent.pdf?document=UK-Rev1.svg&barcode_value=123123122&fullname=Joe+Sixpack
+http://66.35.209.251:9006/pdfrenderservice/get-pdf/UKProEvent.pdf?fullname=$fullname&barcode_value=$BarNumber&barcode_string=$BarString&document=UK-Rev1.svg
+http://localhost:8080/pdfrenderservice/get-pdf/Photokina-2006.pdf?document=photokina-2006-ticket-en.svg&barcode_value=123123122&fullname=Martin+Müller&type=VIP
+-->
+	<property name="project.version" value="1.3"/>
+
+	<property name="tomcat.manager.url" value="http://localhost:8080/manager"/>
+	<property name="tomcat.manager.username" value="manager"/>
+	<property name="tomcat.manager.password" value="mana!ger"/>
+	<property name="webapp.name" value="pdfrenderservice"/>
+
+	<description>
+		The PDFRenderService renders an SVG document using
+ 		Apache Batik and returns a PDF version.
+    </description>
+
+	<taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask">
+	    <classpath>
+	      <pathelement path="/Library/Tomcat/server/lib/catalina-ant.jar"/>
+	    </classpath>
+	</taskdef>
+
+	<target name="rebuild+reload" depends="war-root, reload"/>
+
+    <target name="reload" description="Reload application in Tomcat">
+        <reload url="${tomcat.manager.url}"
+            username="${tomcat.manager.username}"
+            password="${tomcat.manager.password}"
+            path="/${webapp.name}"/>
+    </target>
+	
+	<target name="war" depends="clean,war-root">
+		<!--<war destfile="build/${ant.project.name}-${project.version}.war">-->
+		<jar destfile="build/pdfrenderservice.war">
+			<fileset dir="build/war-root"/>
+		</jar>
+	</target>
+		
+	<target name="war-root" depends="build">
+	
+		<!-- package up our own classes into the main jar -->
+		<jar destfile="build/war-root/WEB-INF/lib/${ant.project.name}.jar">
+			<fileset dir="build/classes">
+				<include name="**/*.class" />
+			</fileset>
+			<manifest>
+				<attribute name="Main-Class" value="ch.entropy.PDFRenderServlet" />
+			</manifest>
+		</jar>
+		
+		<copy todir="build/war-root/WEB-INF/lib">
+			<fileset dir="lib">
+				<include name="*.jar" />
+				<exclude name="javax.servlet.jar" />
+			</fileset>
+		</copy>
+
+		<copy todir="build/war-root/WEB-INF/fonts">
+			<fileset dir="fonts/svg">
+				<include name="*.svg" />
+			</fileset>
+		</copy>
+
+		<copy todir="build/war-root/WEB-INF">
+			<fileset dir="WEB-INF">
+				<include name="**" />
+			</fileset>
+		</copy>
+
+		<copy todir="build/war-root">
+			<fileset dir="web">
+				<include name="*" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="build" depends="mkdir">
+		<!-- forcing JDK 1.4 for now because the one-jar classloader doesn't seem
+		     to work on 1.5 and fails with 'java.util.zip.ZipException' -->
+		<javac srcdir="src"
+			target="1.4"
+			source="1.4"
+         	destdir="build/classes"
+			debug="true"
+			debuglevel="lines,vars,source"
+    		>
+<!--			verbose="true" -->
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar"/>
+				</fileset>
+
+			</classpath>
+		</javac>
+	
+	</target>
+
+	<target name="mkdir">
+		<mkdir dir="build"/>
+		<mkdir dir="build/classes"/>
+		<mkdir dir="build/war-root/WEB-INF/lib"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="build"/>
+	</target>
+
+
+
+</project>
+

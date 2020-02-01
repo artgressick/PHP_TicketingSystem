@@ -1,0 +1,117 @@
+BODY {
+	font-size: 11px;
+	font-family: helvetica, sans-serif;
+}
+DIV.Item {
+	padding: .2em;
+	margin-bottom: .5em;
+	border: 1px solid #dddddd;
+	background-color: #fcfcfc;
+}
+DIV.Toggle {
+	float: left;
+	clear: both;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	padding-right: .5em;
+	cursor: pointer;
+}
+H1 {
+	font-size: 12px;
+	margin: 0;
+	font-weight: normal;
+}
+H1 SPAN.Level {
+	font-family: monospace;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: .4em;
+	padding-right: .4em;
+}
+H1 SPAN.ErCssError {
+	background-color: #c00000;
+	color: white;
+}
+H1 SPAN.ErCssWarning {
+	background-color: #600000;
+	color: white;
+}
+H1 SPAN.Notice {
+	background-color: black;
+	color: white;
+}
+H1 SPAN.Debug {
+	background-color: #666666;
+	color: white;
+}
+H1 SPAN.Count {
+	color: black;
+	background-color: yellow;
+}
+H1 SPAN.Message {
+	color: black;
+	text-decoration: underline;
+}
+H1 SPAN.File {
+	color: #666666;
+	font-size: 10px;
+}
+H1 SPAN.Line {
+	color: #666666;
+	text-decoration: underline;
+	font-size: 10px;
+}
+H2 {
+	font-size: 12px;
+	margin: 0;
+	margin-top: .5em;
+	padding: 0;
+}
+DIV.Details {
+	display: none;
+	margin-left: 1em;
+}
+DIV.Context {
+	display: none;
+	clear: both;
+	margin-left: 1em;
+	margin-top: .5em;
+	background-color: #eeeeee;
+	border: 1px dashed black;
+	white-space: pre;
+}
+DIV.Backtraces {
+	clear: both;
+	display: none;
+}
+DIV.Backtrace {
+	margin-left: 1em;
+	clear: both;
+}
+H3 {
+	font-size: 11px;
+	margin: 0;
+	margin-top: .5em;
+}
+H3 SPAN.File {
+	color: #666666;
+	font-size: 9px;
+}
+H3 SPAN.Line {
+	color: #666666;
+	text-decoration: underline;
+	font-size: 9px;
+}
+DIV.Backtrace DIV.BacktraceCode {
+	clear: both;
+	margin-left: 1em;
+	display: none;
+	font-family: monospace;
+	white-space: pre;
+	line-height: 11px;
+	border: 1px dashed black;
+	background-color: #eeeeee;
+}
+
